@@ -7,8 +7,24 @@
 body {
   height: 100dvh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 48px;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
 }
 
 .grid {
@@ -25,6 +41,6 @@ body {
   border: 1px solid whitesmoke;
 }
 
-.grid-item:hover {
+/* .grid-item:hover {
   background-color: #006cd2;
-}
+} */
