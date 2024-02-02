@@ -37,10 +37,5 @@ body {
 }
 
 .grid-item {
-  width: calc(100% / 16);
   border: 1px solid whitesmoke;
 }
-
-/* .grid-item:hover {
-  background-color: #006cd2;
-} */
