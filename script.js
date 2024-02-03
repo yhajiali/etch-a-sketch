@@ -2,14 +2,16 @@ const grid = document.querySelector(".grid");
 const gridSize = document.getElementById("grid-size");
 const color = document.getElementById("color");
 const clearBtn = document.getElementById("clear");
+let gridSizeValue = 16;
 let gridItem;
 
 gridSize.addEventListener("input", () => {
   gridSizeValue = gridSize.value;
-  setGridSize(gridSizeValue);
+  setGridSize();
+  setColor(color.value);
 });
 
-const setGridSize = (gridSizeValue = 16) => {
+const setGridSize = () => {
   grid.innerHTML = ""; //Reset the grid by removing existing div items
 
   // Re-add div items to the grid
