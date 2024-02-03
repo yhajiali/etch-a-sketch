@@ -5,22 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="inputs">
-      <div class="input">
-        <label for="grid-size">Grid Size:</label>
-        <input type="range" id="grid-size" min="16" max="100" value="16" />
-      </div>
-      <div class="input">
-        <label for="color">Color:</label>
-        <input type="color" id="color" />
+    <header>
+      <i class="bx bxs-paint"></i>
+      <span>Etch-a-Sketch</span>
+    </header>
+
+    <main>
+      <div class="inputs">
+        <div class="input">
+          <label for="grid-size">Grid Size:</label>
+          <input type="range" id="grid-size" min="16" max="100" value="16" />
+          <span id="grid-size-span"></span>
+        </div>
+        <div class="input">
+          <label for="color">Color:</label>
+          <input type="color" id="color" />
+        </div>
+
+        <button id="clear">Clear</button>
       </div>
 
-      <button id="clear">Clear</button>
-    </div>
-
-    <div class="grid"></div>
+      <div class="grid"></div>
+    </main>
   </body>
   <script src="script.js"></script>
 </html>

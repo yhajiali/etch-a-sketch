@@ -8,7 +8,18 @@
   font-family: "Poppins";
 }
 
-body {
+header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 25px;
+    padding: 12px;
+    border-bottom: 3px solid #006cd2;
+    width: max-content;
+    margin: 0 auto;
+}
+
+main {
   height: 100dvh;
   display: flex;
   flex-direction: column;

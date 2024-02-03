@@ -1,5 +1,6 @@
 const grid = document.querySelector(".grid");
 const gridSize = document.getElementById("grid-size");
+const gridSizeSpan = document.getElementById("grid-size-span");
 const color = document.getElementById("color");
 const clearBtn = document.getElementById("clear");
 let gridSizeValue = 16;
@@ -23,6 +24,7 @@ const setGridSize = () => {
   }
 
   gridItem = document.querySelectorAll(".grid-item");
+  gridSizeSpan.innerHTML = `${gridSizeValue} X ${gridSizeValue}`;
 };
 
 setGridSize();
